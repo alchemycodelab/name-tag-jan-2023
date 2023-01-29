@@ -20,3 +20,15 @@ function sayHello(name) {
 
 sayHello('Justin');
 sayHello('Nastasia');
+
+// make a variable that references the update button
+// listen for a click on that button
+const updateBtn = document.getElementById('update');
+updateBtn.addEventListener('click', () => {
+    console.log('i am clicking on the button!!');
+
+    // make a variable that contains a reference to the html element
+    const nameElem = document.getElementById('name');
+    // change the text content of that html element
+    nameElem.textContent = 'Julie';
+});

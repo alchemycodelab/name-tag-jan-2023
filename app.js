@@ -24,11 +24,15 @@ sayHello('Nastasia');
 // make a variable that references the update button
 // listen for a click on that button
 const updateBtn = document.getElementById('update');
+
 updateBtn.addEventListener('click', () => {
     console.log('i am clicking on the button!!');
-
-    // make a variable that contains a reference to the html element
+    // make a variable that references the INPUT value
+    const nameInput = document.getElementById('input');
+    // make a variable that contains a reference to
+    // the name html element
     const nameElem = document.getElementById('name');
-    // change the text content of that html element
-    nameElem.textContent = 'Julie';
+    // change the text content of the name html element to the value
+    // of the input
+    nameElem.textContent = nameInput.value;
 });
